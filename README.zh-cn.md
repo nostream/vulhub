@@ -1,13 +1,30 @@
-# Vulhub - Docker-Compose files for vulnerabilities environment
+<!-- markdownlint-disable first-line-heading -->
+<p align="center">
+  <img src=".github/assets/logo.svg" alt="Vulhub" height="300" />
+  <p align="center">
+    <a href="https://github.com/vulhub/vulhub/blob/master/LICENSE">
+      <img src="https://img.shields.io/github/license/vulhub/vulhub.svg" alt="GitHub">
+    </a>
+    <a href="https://www.wangan.com/vulhub">
+      <img src="https://img.shields.io/badge/Official-Community-blue.svg" alt="Official Community">
+    </a>
+    <a href="https://discord.gg/bQCpZEK">
+      <img src="https://img.shields.io/discord/485505185167179778.svg" alt="Chat on Discord">
+    </a>
+    <a href="https://www.patreon.com/phith0n">
+      <img src="https://img.shields.io/badge/sponsor-patreon-73d6a1.svg" alt="Backers and sponors on Patreon">
+    </a>
+    <a href="https://opencollective.com/vulhub#backer">
+      <img src="https://img.shields.io/badge/backer-opencollective-f89a76.svg" alt="Backers and sponors on Opencollective">
+    </a>
+  </p>
+</p>
 
-[![Docker Stars](https://img.shields.io/badge/docker%20stars-20k-blue.svg)](https://hub.docker.com/u/vulhub/) [![GitHub](https://img.shields.io/github/license/vulhub/vulhub.svg)](https://github.com/vulhub/vulhub/blob/master/LICENSE)
- [![Chat on Discord](https://img.shields.io/discord/485505185167179778.svg)](https://discord.gg/GhMB3Z) [![Backers and sponors on Patreon](https://img.shields.io/badge/sponsor-patreon-73d6a1.svg)](https://www.patreon.com/phith0n) [![Backers and sponors on Opencollective](https://img.shields.io/badge/backer-opencollective-f89a76.svg)](https://opencollective.com/vulhub#backer)
-
-Vulhub是一个面向大众的开源漏洞靶场，无需docker知识，简单执行两条命令即可编译、运行一个完整的漏洞靶场镜像。
+Vulhub是一个面向大众的开源漏洞靶场，无需docker知识，简单执行一条命令即可编译、运行一个完整的漏洞靶场镜像。
 
 ## Installation
 
-在ubuntu16.04下安装docker/docker-compose:
+在Ubuntu 20.04下安装docker/docker-compose:
 
 ```bash
 # 安装pip
@@ -17,7 +34,7 @@ curl -s https://bootstrap.pypa.io/get-pip.py | python3
 curl -s https://get.docker.com/ | sh
 
 # 启动docker服务
-service docker start
+systemctl start docker
 
 # 安装compose
 pip install docker-compose 
@@ -68,7 +85,8 @@ docker-compose down -v
 
 更多问题，可以用如下方式和我们联系：
 
-- [Discord](https://discord.gg/GhMB3Z)
+- [讨论社区](https://www.wangan.com/vulhub)
+- [Discord](https://discord.gg/bQCpZEK)
 - [Twitter](https://twitter.com/vulhub)
 
 感谢如下贡献者：
@@ -82,16 +100,18 @@ docker-compose down -v
 赞助商：
 
 <p>
+  <a href="https://www.wangan.com/vulhub" target="_blank"><img src="https://vulhub.org/img/sponsor/wangan.png" width="200"></a>
+  <a href="https://www.cvebase.com" target="_blank"><img src="https://vulhub.org/img/sponsor/cvebase.png" width="200"></a>
+  <a href="https://www.huoxian.cn" target="_blank"><img src="https://vulhub.org/img/sponsor/huoxian.png" width="200"></a>
   <a href="https://www.chaitin.cn" target="_blank"><img src="https://vulhub.org/img/sponsor/chaitin.png" width="200"></a>
   <a href="https://xianzhi.aliyun.com/" target="_blank"><img src="https://vulhub.org/img/sponsor/aliyun.svg" width="200"></a>
-  <a href="https://www.didiyun.com/?channel=14196" target="_blank"><img src="https://vulhub.org/img/sponsor/didi.png" width="200"></a>
 </p>
 
-在patreon上赞助vulhub 🙏 
+在patreon上赞助Vulhub 🙏
 
 <a href="https://www.patreon.com/bePatron?u=12677520"><img src="https://vulhub.org/img/sponsor/patreon.png" width="150"></a>
 
-在opencollective上赞助vulhub 🙏 
+在opencollective上赞助Vulhub 🙏
 
 <p>
   <a href="https://opencollective.com/vulhub#backer"><img src="https://opencollective.com/vulhub/backers.svg?width=138"></a>
